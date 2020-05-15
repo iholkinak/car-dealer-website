@@ -110,7 +110,24 @@ html {
   box-sizing: border-box;
 }
 
+.body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
 .header {
   background-color: #424e64;
+  color: #bbc2ca;
+  padding: 1rem 2%;
+}
+
+.header__title {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.header__subtitle {
+  font-size: 1.05rem;
+  font-weight: 300;
 }
 /*# sourceMappingURL=styles.css.map */

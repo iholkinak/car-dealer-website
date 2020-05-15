@@ -9,6 +9,23 @@ html {
     box-sizing: border-box;
 }
 
+.body {
+    font-family: $defaultFont;
+    font-weight: $normalWeight;
+}
+
 .header {
     background-color: $primaryColor;
+    color: $secondaryColor;
+    padding: 1rem $gutter;
+
+    @at-root #{&}__title {
+        font-size: 2rem;
+        font-weight: $normalWeight;
+    }
+
+    @at-root #{&}__subtitle {
+        font-size: 1.05rem;
+        font-weight: $normalWeight;
+    }
 }
