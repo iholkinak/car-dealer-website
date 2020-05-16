@@ -29,3 +29,59 @@ html {
         font-weight: $normalWeight;
     }
 }
+
+.nav {
+    background-color: $secondaryColor;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+    @at-root #{&}__item {
+        float: left;
+        width: 25%;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+
+        @at-root #{&}--active {
+            background-color: darken($secondaryColor, 20%);
+        }
+    }
+
+    @at-root #{&}__item:last-child {
+        border-right: none;
+    }
+
+    @at-root #{&}__link {
+        display: block;
+        text-align: center;
+        color: $primaryColor;
+        font-weight: $boldWeight;
+        text-decoration: none;
+        padding: .5rem 0;
+        transition: background 0.75s ease, color 0.75s ease;
+    }
+
+    @at-root #{&}__link:hover {
+        color: $secondaryColor;
+        background-color: $primaryColor;
+    }
+}
+
+.footer {
+    width: 100%;
+    background-color: $primaryColor;
+
+    @at-root #{&}__copyright {
+        text-align: center;
+        color: $secondaryColor;
+        padding: .75rem 0;
+        font-size: .9rem;
+    }
+
+    @at-root #{&}__contact-number {
+        color: $secondaryColor;
+    }
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
