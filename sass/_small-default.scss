@@ -87,6 +87,20 @@ html {
         background: linear-gradient(to right, rgba(66,78,100,1) 0%,rgba(66,78,100,0.99) 1%,rgba(66,78,100,0) 100%);
         margin: 0 $gutter;
     }
+
+    .cars {
+        width: 100%;
+
+        @at-root #{&}__img {
+            width: 100% - $gutterdbl;
+            margin: 0 $gutter;
+        }
+
+        @at-root #{&}__price {
+            color: $primaryColor;
+            text-align: center;
+        }
+    }
 }
 
 // =============== FOOTER ================
