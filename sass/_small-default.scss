@@ -89,16 +89,39 @@ html {
     }
 
     .cars {
-        width: 100%;
-
+        width: 100% - $gutterdbl;
+        margin: 0 $gutter;
+       
         @at-root #{&}__img {
-            width: 100% - $gutterdbl;
-            margin: 0 $gutter;
+            width: 100%;            
         }
 
         @at-root #{&}__price {
             color: $primaryColor;
             text-align: center;
+        }
+    }
+
+    .blog {
+        width: 100%;
+
+        @at-root #{&}__title {
+            color: lighten($primaryColor, 10);
+            font-size: 1.5rem;
+            margin: .75rem $gutter;
+        }
+
+        .article {
+            margin:.5rem $gutter;
+            @at-root #{&}__title {
+                color: lighten($primaryColor, 20);
+                font-size: 1.2rem;
+            }
+
+            @at-root #{&}__paragraph {
+                line-height: 130%;
+                color: $fontColor;
+            }
         }
     }
 }
