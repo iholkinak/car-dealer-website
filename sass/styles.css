@@ -131,6 +131,24 @@ html {
   font-weight: 300;
 }
 
+.header form {
+  float: right;
+}
+
+.header form input {
+  width: 6rem;
+  border-radius: 10px;
+  margin-right: 2%;
+  padding: .2rem;
+  border: none;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+}
+
+.header form input:focus {
+  width: 8rem;
+}
+
 .nav {
   background-color: #bbc2ca;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
